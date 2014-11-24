@@ -1,0 +1,7 @@
+Version 0.2
+- Auslagerung der Variablen in eine conf
+
+- Netzwerkerkennung und Anpassung SSH
+	- Check nach Serve  
+	- home.timaba.de:22022 (config)
+  	- atb-server:22 (config)

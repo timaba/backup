@@ -1,0 +1,3 @@
+cp backup.desktop ~/.local/share/applications
+cp data_backup.png ~./icons/data_backup.png
+

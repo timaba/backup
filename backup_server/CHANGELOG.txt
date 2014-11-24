@@ -1,0 +1,8 @@
+2014-11-23 (V 0.1.4)
+- lock-Datei
+  + mehrfaches laufen des Backup wird unterbunden.
+- Skript-Ende in Funktion
+  + beinhaltet löschen der lock-Datei
+- Benachrichtigung über sendxmpp
+- externe Datei für zu sichernde Ordner
+  + werden einzeln gesichert
