@@ -2,7 +2,7 @@
 #Backupskript - Local backup with rsync for small server
 #Version: 0.0.1 (2014-11-22)
 #
-#Copyright (C) 2014  Tilman Bartsch <tba@timaba.de>
+#Copyright (C) 2014  Tilman Bartsch <tba+github@timaba.de>
 #
 #This program is free software: you can redistribute it and/or modify
 #it under the terms of the GNU General Public License as published by
@@ -97,4 +97,3 @@ done
 NOTIFY_LOG_MSG="Backup beendet.";
 notify_log;
 lock_delete_end;
-
