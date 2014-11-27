@@ -1,7 +1,0 @@
-1. Kopieren nach /opt/backup (o.Ä.).
-
-2. dirlist.conf mit zu sichernde Ordnern befüllen.
-
-3. Ggf. Skript ausführbar machen.
-
-4. Ggf. Anacron setzen (/etc/cron.weekly).
