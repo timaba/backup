@@ -1,8 +1,8 @@
 #!/bin/bash
 #Backupskript - Backup with rsync and ssh
-#Version: 0.0.1-initial (2014-11-28)
+#Version: 0.1.2-initial (2016-12-21)
 #
-#Copyright (C) 2014  Tilman Bartsch <tba+github@timaba.de>
+#Copyright (C) 2016  Tilman Bartsch <tba+github@timaba.de>
 #
 #This program is free software: you can redistribute it and/or modify
 #it under the terms of the GNU General Public License as published by
@@ -18,22 +18,22 @@
 
 ###config
 #SSH (key login required)
-ssh_target="pax";
+ssh_target="target_name";
 ssh_user="backups";
-ssh_dir="/home/backups/md0/xray504/";
+ssh_dir="/path/to/destination/";
 
-backup_dir="/home/tilman/Backup/xray504/";
+backup_dir="/path/of/local/backups";
 
 script_path=$(dirname "$(readlink -e "$0")");
-log_file=${script_path}"/backup_"${ssh_target}".log";
-lock_file=${script_path}"/backup_"${ssh_target}".lock";
+log_file=${script_path}"/backup_ext.log";
+lock_file=${script_path}"/backup_ext.lock";
 
 ###script begins here
 ##functions
 #log and send notification (sendxmpp)
 notify_log() {
  now_msg=$(/bin/date +%Y%m%d-%H%M%S);
- `echo ${now_msg}": "${notify_log_msg} | sendxmpp -t -u xray504 -j b4r.eu -p lai3is6i timaba@timaba.de`;
+ `echo ${now_msg}": "${notify_log_msg} | sendxmpp -t -u xxxxx -j b4r.eu -p xxxxxxx xxx@xxxx`;
  `echo ${now_msg}": "${notify_log_msg} >> ${log_file}`;
  unset notify_log_msg;
  unset now_msg;
