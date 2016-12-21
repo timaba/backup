@@ -23,10 +23,10 @@ PFAD=$(dirname "$(readlink -e "$0")");
 HOST=`hostname`;
 
 #Ursprungsverzeichnis des Backup
-SOURCE=(` cat "${PFAD}/dirlist.conf" `);
+SOURCE=(` cat "${PFAD}/backup_dirs.conf" `);
 
 #Pfad zu Datei mit auszuschließenden Dateien/Ordnern
-EXCLUDE=${PFAD}"/excludes";
+EXCLUDE=${PFAD}"/backup_excl.conf";
 
 #Pfad zu Logdatei
 LOG_FILE=${PFAD}"/backup_"${HOST}".log";
