@@ -2,7 +2,7 @@
 #Backupskript - Local backup with rsync for small servers
 #Version: 0.2.2 (2016-06-22)
 #
-#Copyright (C) 2014  Tilman Bartsch <tba+github@timaba.de>
+#Copyright (C) 2016  Tilman Bartsch <tba+github@timaba.de>
 #
 #This program is free software: you can redistribute it and/or modify
 #it under the terms of the GNU General Public License as published by
@@ -29,13 +29,13 @@ SOURCE=(` cat "${PFAD}/backup_dirs.conf" `);
 EXCLUDE=${PFAD}"/backup_excl.conf";
 
 #Pfad zu Logdatei
-LOG_FILE=${PFAD}"/backup_"${HOST}".log";
+LOG_FILE=${PFAD}"/backup.log";
 
 #Pfad zu Lock-Datei
-LOCK_FILE=${PFAD}"/backup_"${HOST}".lock";
+LOCK_FILE=${PFAD}"/backup.lock";
 
 #Zielpfad des Backup
-DEST_PATH="/home/tilman/Backup/xray504/";
+DEST_PATH="/path/to/backup";
 
 ###Skript beginnt, unterhalb dieser Zeile nichts ändern
 NOW_START=$(/bin/date +%Y%m%d-%H%M%S);
