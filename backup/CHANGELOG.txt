@@ -1,9 +1,0 @@
-2014-11-22
-- avahi-resolve-host-name ersetzt arp:
-  + arp benötigt zentrale Infrastruktur (DNS),
-  + avahi ist universeller,
-  + avahi muss auf Server installiert sein, SSH muss pupliziert sein.
-- lock-Datei
-  + mehrfaches laufen des Backup wird unterbunden.
-- Skript-Ende in Funktion
-  + beinhaltet löschen der lock-Datei
